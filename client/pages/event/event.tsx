@@ -1,5 +1,6 @@
-import { Button, Grid, Stack, Typography } from "@mui/material";
+import { Box, Button, Grid, Stack, Typography } from "@mui/material";
 import React, { useState } from "react";
+import EventCard from "../../components/event-card/event-card";
 import ItemList from "../../components/item-list/item-list";
 import SelectItemModal from "../../components/select-item-modal/select-item-modal";
 import ShoppingCart from "../../components/shopping-cart/shopping-cart";
@@ -8,6 +9,10 @@ export default function Event(){
   const [isModalOpen, setModalOpen] = useState(false)
   return (
     <React.Fragment>
+      <Box maxWidth='400px' marginX='10px' marginTop='20px'>
+      <EventCard></EventCard>
+      </Box>
+      
       <SelectItemModal onClose={()=> {return {}}} open={isModalOpen}/>
       <Stack direction='column' paddingY='20px' paddingX='20px'>
 
