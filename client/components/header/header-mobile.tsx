@@ -5,11 +5,11 @@ export default function HeaderMobile(){
     <Grid 
       container 
       paddingY='30px' 
-      paddingX='10px'
+      paddingX='15px'
       justifyContent='flex-start'
       sx={{backgroundColor:'primary.main'}}
       >
-        <Typography variant="h5" color='white'>Test</Typography>
+        <Typography variant="h5" color='white'>Événement</Typography>
     </Grid>
   )
 }

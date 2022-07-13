@@ -7,16 +7,22 @@ export default function ShoppingCart(){
   <Stack 
     direction='row'
     spacing='8px'
+    alignItems='center'
     sx={{
       paddingX: '20px',
       paddingY: '15px',
       borderRadius: '15px', 
-      backgroundColor: 'blue',
-      opacity:'0.6'
+      backgroundColor: 'primary.main',
       }}>
+        
     <Typography color='white'>145 $</Typography>
-    <Badge badgeContent={4} color="secondary">
-      <ShoppingCartIcon sx={{color:'white', fontSize: '30px'}}/>
+    <Badge badgeContent={4} sx={{
+      "& .MuiBadge-badge": {
+        color: "white",
+        backgroundColor: "primary.dark"
+      }
+    }}>
+      <ShoppingCartIcon sx={{color:'white', fontSize: '32px'}}/>
     </Badge>
     
     

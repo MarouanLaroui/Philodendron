@@ -13,7 +13,7 @@ export default function EventCard(){
       sx={{ boxShadow: 2 }}
       >
       <Stack direction='row' spacing='20px'>
-        <Typography fontWeight='bold' color='green'>22 Mai 2022</Typography>
+        <Typography fontWeight='bold' color='primary'>22 Mai 2022</Typography>
         <Typography color='gray'>19:30</Typography>
       </Stack>
       <Typography variant="h6" fontWeight='bold'>
@@ -27,8 +27,8 @@ export default function EventCard(){
       <Divider sx={{marginY:'15px'}}/>
 
       <Stack direction='row' spacing='5px' alignItems='center'>
-        <LocationOnIcon sx={{color:'green'}}/>
-        <Typography variant="caption">145 Impasse de la voie romaine, Montpellier 34090</Typography>
+        <LocationOnIcon color="primary"/>
+        <Typography variant="caption" sx={{color:'gray'}}>145 Impasse de la voie romaine, Montpellier 34090</Typography>
       </Stack>
     </Stack>
   )
